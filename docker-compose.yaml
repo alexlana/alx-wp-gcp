@@ -1,0 +1,42 @@
+version: '3'
+services:
+  mariadb:
+    image: docker.io/bitnami/mariadb:10.6
+    container_name: alx-wp-db
+    volumes:
+      - './local_persistence/db:/bitnami/mariadb'
+      - './app_data/dump.sql:/docker-entrypoint-initdb.d/dump.sql'
+    environment:
+      - ALLOW_EMPTY_PASSWORD=no
+      - MARIADB_USER=alx-wp-db
+      - MARIADB_PASSWORD=L4S77JK34z882jkalsd
+      - MARIADB_ROOT_PASSWORD=L4S77JK34z882jkalsd
+      - MARIADB_DATABASE=alx-wp-db
+    env_file:
+      - .env
+  wordpress:
+    image: alx-wp
+    build:
+      context: ./
+      dockerfile: Dockerfile.dev
+    container_name: alx-wp
+    ports:
+      - '80:8080'
+      - '443:8443'
+    volumes:
+      - './local_persistence/uploads:/opt/bitnami/wordpress/wp-content/uploads'
+      - './local_persistence/logs:/opt/bitnami/wordpress/wp-content/logs'
+      - './local_persistence/db_backups:/opt/bitnami/wordpress/wp-content/aiowps_backups'
+      - './app_data/languages:/opt/bitnami/wordpress/wp-content/languages'
+      - './app_data/mu-plugins:/opt/bitnami/wordpress/wp-content/mu-plugins'
+      - './app_data/plugins:/opt/bitnami/wordpress/wp-content/plugins'
+      - './app_data/themes:/opt/bitnami/wordpress/wp-content/themes'
+    depends_on:
+      - mariadb
+    env_file:
+      - .env
+volumes:
+  mariadb_data:
+    driver: local
+  wordpress_data:
+    driver: local

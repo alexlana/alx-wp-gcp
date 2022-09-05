@@ -1,0 +1,36 @@
+# Translation of Themes - Me in English (UK)
+# This file is distributed under the same license as the Themes - Me package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2017-01-29 00:08:27+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: GlotPress/2.3.0-alpha\n"
+"Language: en_GB\n"
+"Project-Id-Version: Themes - Me\n"
+
+#. Description of the plugin/theme
+msgid "Me theme is a simple and clean WordPress theme ideal for a personal blog. Completely fluid and responsive child theme with left side header, Valid HTML5 Document, SEO Friendly, Theme settings extending the WordPress Customizer. Beautiful typography, well balanced white space, and minimal graphic, built with Omega Theme Framework."
+msgstr "Me theme is a simple and clean WordPress theme ideal for a personal blog. Completely fluid and responsive child theme with left-side header, Valid HTML5 Document, SEO Friendly, Theme settings extending the WordPress Customiser. Beautiful typography, well-balanced white space, and minimal graphics, built with the Omega Theme Framework."
+
+#. Theme Name of the plugin/theme
+msgid "Me"
+msgstr "Me"
+
+#: partials/entry-byline.php:4
+msgid "Edit"
+msgstr "Edit"
+
+#. Author URI of the plugin/theme
+msgid "https://themehall.com"
+msgstr "https://themehall.com"
+
+#. Author of the plugin/theme
+msgid "themehall.com"
+msgstr "themehall.com"
+
+#. Theme URI of the plugin/theme
+msgid "https://themehall.com/me-omega-child-theme"
+msgstr "https://themehall.com/me-omega-child-theme"

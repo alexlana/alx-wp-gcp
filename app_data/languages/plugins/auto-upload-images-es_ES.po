@@ -1,0 +1,157 @@
+# Translation of Plugins - Auto Upload Images - Stable (latest release) in Spanish (Spain)
+# This file is distributed under the same license as the Plugins - Auto Upload Images - Stable (latest release) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2021-11-11 04:40:01+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: GlotPress/3.0.0-alpha.2\n"
+"Language: es\n"
+"Project-Id-Version: Plugins - Auto Upload Images - Stable (latest release)\n"
+
+#. Plugin URI of the plugin
+msgid "https://irani.im/wp-auto-upload-images.html"
+msgstr "https://irani.im/wp-auto-upload-images.html"
+
+#: src/setting-page.php:144
+msgid "Make a Donation"
+msgstr "Hacer una donación"
+
+#: src/setting-page.php:144
+msgid "If you want to help to plugin development and if you can do so please make a donation to the project and encourage others to do so, for more updates and more features."
+msgstr "Si quieres ayudar al desarrollo de este plugin para nuevas actualizaciones y funcionalidades, podrías por favor realizar una donación al proyecto y animar a otros a hacerlo."
+
+#: src/setting-page.php:123
+msgid "Support and Donate to the Plugin"
+msgstr "Apoya y dona al plugin"
+
+#: src/setting-page.php:110
+msgid "Are you sure to reset all options to defaults?"
+msgstr "¿Estás seguro de que has restablecido todas las opciones a los valores por defecto?"
+
+#: src/setting-page.php:109
+msgid "Reset Options"
+msgstr "Opciones de restablecimiento"
+
+#: src/setting-page.php:71
+msgid "To activate this feature please enable Gd or Imagick extensions of PHP."
+msgstr "Para activar esta característica, activa las extensiones Gd o Imagick de PHP."
+
+#: src/setting-page.php:61
+msgid "(Inactive)"
+msgstr "(Inactivo)"
+
+#: src/WpAutoUpload.php:208
+msgid "Successfully settings reset to defaults."
+msgstr "Se han restablecido correctamente los ajustes a los valores por defecto."
+
+#. Author URI of the plugin
+msgid "https://irani.im"
+msgstr "https://irani.im"
+
+#. Author of the plugin
+msgid "Ali Irani"
+msgstr "Ali Irani"
+
+#. Description of the plugin
+msgid "Automatically upload and import external images of a post to Wordpress upload directory and media management"
+msgstr "Sube e importa automáticamente las imágenes externas de una entrada al directorio de subida de WordPress y al gestor de medios"
+
+#: src/setting-page.php:146
+msgid "If you are a wp developer and like to contribute to this plugin development or you are a translator and want to have this plugin in your language you can start from <a href=\"https://github.com/airani/wp-auto-upload\" target=\"_blank\">plugin Github repository</a>."
+msgstr "Si eres un desarrollador de WordPress y quieres contribuir al desarrollo de este plugin, o eres un traductor y quieres tener este plugin en tu idioma, puedes empezar desde el <a href=\"https://github.com/airani/wp-auto-upload\" target=\"_blank\">repositorio del plugin en GitHub</a>."
+
+#: src/setting-page.php:140
+msgid "Official Page"
+msgstr "Página oficial"
+
+#: src/setting-page.php:136
+msgid "Rate to this plugin"
+msgstr "Valora a este plugin"
+
+#: src/setting-page.php:132
+msgid "Plugin Page in WP"
+msgstr "Página del plugin en WP"
+
+#: src/setting-page.php:129
+msgid "Github Repository"
+msgstr "Repositorio en GitHub"
+
+#: src/setting-page.php:126
+msgid "Report Bug and Issues"
+msgstr "Informar de un error y problemas"
+
+#: src/setting-page.php:118
+msgid "Information"
+msgstr "Información"
+
+#: src/setting-page.php:102
+msgid "Enter the domains you wish to be excluded from uploading images: (One domain per line)"
+msgstr "Introduce los nombres de dominio que deseas excluir al subir imágenes: (Un nombre de dominio por línea)"
+
+#: src/setting-page.php:98
+msgid "Exclude Domains:"
+msgstr "Excluir dominios:"
+
+#: src/setting-page.php:92
+msgid "Select the Post Types that you want exclude from automatic uploading"
+msgstr "Selecciona los tipos de contenido que quieres excluir de la subida automática"
+
+#: src/setting-page.php:79
+msgid "Exclude Post Types:"
+msgstr "Excluir los tipos de contenido:"
+
+#: src/setting-page.php:69
+msgid "You can choose max width and height for images uploaded by this plugin on your site. If you leave empty each one of fields by default use the original size of the image."
+msgstr "Puedes elegir el ancho y alto máximos para las imágenes subidas por este plugin en tu sitio. Si se deja vacío cada uno de los campos por defecto, se usará el tamaño original de la imagen."
+
+#: src/setting-page.php:67
+msgid "Max Height"
+msgstr "Altura máxima"
+
+#: src/setting-page.php:65
+msgid "Max Width"
+msgstr "Anchura máxima"
+
+#: src/setting-page.php:59
+msgid "Image Size:"
+msgstr "Tamaño de la imagen:"
+
+#: src/setting-page.php:51
+msgid "Choose a custom alt name for the new images will be uploaded. You can also use these shortcodes %s."
+msgstr "Elige un nombre «alt» personalizado para las nuevas imágenes que se subirán. También puedes usar estos shortcodes: %s."
+
+#: src/setting-page.php:45
+msgid "Alt Name:"
+msgstr "Nombre alternativo:"
+
+#: src/setting-page.php:38
+msgid "Choose a custom filename for the new images will be uploaded. You can also use these shortcodes %s."
+msgstr "Elige un nombre de archivo personalizado para las nuevas imágenes que se subirán. También puedes usar estos shortcodes; %s."
+
+#: src/setting-page.php:32
+msgid "Image Name:"
+msgstr "Nombre de la imagen:"
+
+#: src/setting-page.php:26
+msgid "If you need to choose a new base URL for the images that will be automatically uploaded. Ex:"
+msgstr "Si necesitas escoger una nueva URL base para las imágenes que van a ser subidas automaticamente. Por ej."
+
+#: src/setting-page.php:21
+msgid "Base URL:"
+msgstr "URL base:"
+
+#: src/WpAutoUpload.php:204
+msgid "Settings Saved."
+msgstr "Ajustes guardados."
+
+#. Plugin Name of the plugin
+#: src/WpAutoUpload.php:138
+msgid "Auto Upload Images"
+msgstr "Auto Upload Images"
+
+#: src/setting-page.php:4 src/WpAutoUpload.php:137
+msgid "Auto Upload Images Settings"
+msgstr "Ajustes de Auto Upload Images"

@@ -1,0 +1,172 @@
+# Translation of Plugins - User Profile Picture - Stable (latest release) in Spanish (Spain)
+# This file is distributed under the same license as the Plugins - User Profile Picture - Stable (latest release) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2020-03-31 16:34:47+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: GlotPress/3.0.0-alpha.2\n"
+"Language: es\n"
+"Project-Id-Version: Plugins - User Profile Picture - Stable (latest release)\n"
+
+#. Author URI of the plugin
+msgid "https://www.cozmoslabs.com"
+msgstr "https://www.cozmoslabs.com"
+
+#. Author of the plugin
+msgid "Cozmoslabs"
+msgstr "Cozmoslabs"
+
+#: metronet-profile-picture.php:206
+msgid "Select this option to disable the four image sizes User Profile Picture Creates."
+msgstr "Selecciona esta opción para desactivar los cuatro tamaños de imagen que crea el perfil de usuario."
+
+#: metronet-profile-picture.php:205
+msgid "Disable Image Sizes"
+msgstr "Desactivar los tamaños de las imágenes"
+
+#: metronet-profile-picture.php:202
+msgid "Disable Image Sizes?"
+msgstr "¿Desactivar los tamaños de las imágenes?"
+
+#: metronet-profile-picture.php:764 metronet-profile-picture.php:770
+msgid "Settings"
+msgstr "Ajustes "
+
+#: metronet-profile-picture.php:231
+msgid "Save Options"
+msgstr "Guardar las opciones"
+
+#: metronet-profile-picture.php:198
+msgid "Select this option if you do not want User Profile Picture to show up in Gutenberg or do not plan on using the blocks."
+msgstr "Selecciona esta opción si no quieres que aparezca «User Profile Picture» en Gutenberg o si no planeas usar los bloques."
+
+#: metronet-profile-picture.php:197
+msgid "Disable Gutenberg Blocks"
+msgstr "Desactivar los bloques de Gutenberg"
+
+#: metronet-profile-picture.php:194
+msgid "Gutenberg Blocks"
+msgstr "Bloques de Gutenberg"
+
+#: metronet-profile-picture.php:190
+msgid "Welcome to User Profile Picture!"
+msgstr "¡Bienvenido a User Profile Picture!"
+
+#: metronet-profile-picture.php:181
+msgid "Your options have been saved."
+msgstr "Tus opciones han sido guardadas."
+
+#: metronet-profile-picture.php:1160
+msgid "You must have a role of editor or above to set a new profile image."
+msgstr "Debes tener el perfil de editor o superior para establecer una imagen de perfil nueva."
+
+#: metronet-profile-picture.php:1472
+msgid "Author Information"
+msgstr "Información del autor"
+
+#: metronet-profile-picture.php:1470
+msgid "Author"
+msgstr "Autor"
+
+#: gutenberg/class-gutenberg.php:381 metronet-profile-picture.php:1542
+#: dist/blocks.build.js:2
+msgid "Website"
+msgstr "Web"
+
+#: gutenberg/class-gutenberg.php:377 metronet-profile-picture.php:1538
+#: dist/blocks.build.js:2
+msgid "View all posts by"
+msgstr "Ver todas las entradas de"
+
+#: gutenberg/class-gutenberg.php:70 gutenberg/class-gutenberg.php:343
+#: gutenberg/class-gutenberg.php:409 metronet-profile-picture.php:1514
+#: metronet-profile-picture.php:1570 dist/blocks.build.js:2
+msgid "View Website"
+msgstr "Ver web"
+
+#: gutenberg/class-gutenberg.php:66 gutenberg/class-gutenberg.php:330
+#: gutenberg/class-gutenberg.php:404 metronet-profile-picture.php:1509
+#: metronet-profile-picture.php:1565 dist/blocks.build.js:2
+msgid "View Posts"
+msgstr "Ver entradas"
+
+#: gutenberg/class-gutenberg.php:226 metronet-profile-picture.php:1471
+msgid "Latest Posts"
+msgstr "Últimas entradas"
+
+#: gutenberg/class-gutenberg.php:218 gutenberg/class-gutenberg.php:222
+msgid "Author Details"
+msgstr "Detalles del autor"
+
+#: metronet-profile-picture.php:333 metronet-profile-picture.php:384
+#: metronet-profile-picture.php:401 metronet-profile-picture.php:436
+#: metronet-profile-picture.php:806 metronet-profile-picture.php:812
+msgid "Click to Edit"
+msgstr "Haz clic para editar"
+
+#: metronet-profile-picture.php:1164
+msgid "User not owner."
+msgstr "Usuario no propietario."
+
+#: metronet-profile-picture.php:1117 metronet-profile-picture.php:1153
+msgid "You must be able to upload files."
+msgstr "Debes ser capaz de subir archivos."
+
+#: metronet-profile-picture.php:882
+msgid "Remove Profile Image"
+msgstr "Eliminar la imagen del perfil"
+
+#: metronet-profile-picture.php:1234 metronet-profile-picture.php:1268
+msgid "Profile picture not found."
+msgstr "No se ha encontrado ninguna imagen de perfil."
+
+#: metronet-profile-picture.php:1113 metronet-profile-picture.php:1157
+#: metronet-profile-picture.php:1196 metronet-profile-picture.php:1225
+#: metronet-profile-picture.php:1261
+msgid "User not found."
+msgstr "Usuario no encontrado."
+
+#. Description of the plugin
+msgid "Use the native WP uploader on your user profile page."
+msgstr "Usa la subida de archivos nativa de WP en tu página de perfil de usuario."
+
+#. Plugin URI of the plugin
+msgid "http://wordpress.org/plugins/metronet-profile-picture/"
+msgstr "https://es.wordpress.org/plugins/metronet-profile-picture/"
+
+#. Plugin Name of the plugin
+#: metronet-profile-picture.php:137 metronet-profile-picture.php:152
+#: metronet-profile-picture.php:153 metronet-profile-picture.php:162
+#: metronet-profile-picture.php:163 metronet-profile-picture.php:189
+msgid "User Profile Picture"
+msgstr "User Profile Picture"
+
+#: metronet-profile-picture.php:881
+msgid "Set Profile Image"
+msgstr "Establecer la foto de perfil"
+
+#: metronet-profile-picture.php:845
+msgid "Override Avatar?"
+msgstr "¿Omitir avatar?"
+
+#: metronet-profile-picture.php:793
+msgid "Profile Image"
+msgstr "Foto de perfil"
+
+#: metronet-profile-picture.php:675 metronet-profile-picture.php:883
+msgid "Crop Thumbnail"
+msgstr "Recortar la imagen"
+
+#: metronet-profile-picture.php:331 metronet-profile-picture.php:382
+#: metronet-profile-picture.php:400 metronet-profile-picture.php:435
+#: metronet-profile-picture.php:804 metronet-profile-picture.php:810
+msgid "Upload or Change Profile Picture"
+msgstr "Sube o cambia la foto de perfil"
+
+#: metronet-profile-picture.php:334 metronet-profile-picture.php:385
+#: metronet-profile-picture.php:820
+msgid "Remove profile image"
+msgstr "Eliminar la foto de perfil"

@@ -1,0 +1,5 @@
+local_persistence/uploads/
+local_persistence/db/data/**
+tmp/letsencrypt/**
+!tmp/letsencrypt/.keep
+
