@@ -1,7 +1,7 @@
 resource "google_sql_database_instance" "alx-wp-db" {
   database_version = "MYSQL_8_0"
   name             = "alx-wp-db"
-  project          = "alx-wp-gcp"
+  project          = "${var.project}"
   region           = "us-central1"
 
   settings {
@@ -33,7 +33,7 @@ resource "google_sql_database_instance" "alx-wp-db" {
       }
 
       ipv4_enabled    = true
-      private_network = "projects/alx-wp-gcp/global/networks/alx-wp-gcp"
+      private_network = "projects/${var.project}/global/networks/${var.project}"
     }
 
     location_preference {
@@ -48,4 +48,4 @@ resource "google_sql_database_instance" "alx-wp-db" {
     tier         = "db-f1-micro"
   }
 }
-# terraform import google_sql_database_instance.me_wp_db projects/alx-wp-gcp/instances/alx-wp-db
+# terraform import google_sql_database_instance.me_wp_db projects/${var.project}/instances/alx-wp-db
