@@ -72,6 +72,7 @@ define( 'DB_COLLATE', '' );
 print_r( $_ENV );
 print_r( $_SERVER );
 echo '[' . getenv('WORDPRESS_DATABASE_NAME') . ']'; 
+echo '[' . getenv('WORDPRESS_DATABASE_NAME',true) . ']'; 
 
 echo DB_NAME . ' : ' . DB_USER . ' : ' . DB_PASSWORD . ' : ' . DB_HOST . ' : ' . DB_CHARSET; exit;
 
