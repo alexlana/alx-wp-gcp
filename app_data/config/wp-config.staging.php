@@ -68,6 +68,8 @@ define( 'DB_CHARSET', 'utf8' );
 
 define( 'DB_COLLATE', '' );
 
+echo '[' . getenv('WORDPRESS_DATABASE_NAME') . ']';
+
 echo DB_NAME . ' : ' . DB_USER . ' : ' . DB_PASSWORD . ' : ' . DB_HOST . ' : ' . DB_CHARSET; exit;
 
 
