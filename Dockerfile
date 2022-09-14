@@ -33,8 +33,8 @@ COPY ./app_data/themes /opt/bitnami/wordpress/wp-content/themes
 # isso, ao invés de usar as env vars, reduz pela metade o build
 # COPY ./app_data/config/wp-config.staging.php /opt/bitnami/wordpress/wp-config.php
 
-COPY ./app_data/config/libwordpress.sh /opt/bitnami/scripts/libwordpress.sh
-RUN chmod 777 /opt/bitnami/scripts/libwordpress.sh
+# COPY ./app_data/config/libwordpress.sh /opt/bitnami/scripts/libwordpress.sh
+# RUN chmod 777 /opt/bitnami/scripts/libwordpress.sh
 
 COPY ./app_data/config/extra.conf /opt/bitnami/nginx/conf/bitnami/extra.conf
 RUN chmod 777 /opt/bitnami/nginx/conf/bitnami/extra.conf
