@@ -150,6 +150,8 @@ $table_prefix = 'alxwp_';
 
  */
 
+echo '['.DB_NAME.']';
+
 define( 'WP_DEBUG', true );
 error_reporting(E_ALL);
 ini_set('display_errors', true); 
