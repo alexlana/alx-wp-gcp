@@ -41,22 +41,22 @@
 
 /** The name of the database for WordPress */
 
-define( 'DB_NAME', getenv('WORDPRESS_DATABASE_NAME') );
+define( 'DB_NAME', 'alx-wp-gcp' );
 
 
 /** Database username */
 
-define( 'DB_USER', getenv('WORDPRESS_DATABASE_USER') );
+define( 'DB_USER', 'alx-wp-gcp' );
 
 
 /** Database password */
 
-define( 'DB_PASSWORD', getenv('WORDPRESS_DATABASE_PASSWORD') );
+define( 'DB_PASSWORD', 'e0Y8=Z1TAX\l@nAu' );
 
 
 /** Database hostname */
 
-define( 'DB_HOST', getenv('WORDPRESS_DATABASE_HOST') );
+define( 'DB_HOST', ':/cloudsql/alx-wp-gcp:us-central1:alx-wp-gcp' );
 
 
 /** Database charset to use in creating database tables. */
@@ -68,13 +68,6 @@ define( 'DB_CHARSET', 'utf8' );
 
 define( 'DB_COLLATE', '' );
 
-
-print_r( $_ENV );
-print_r( $_SERVER );
-echo '[' . getenv('WORDPRESS_DATABASE_NAME') . ']'; 
-echo '[' . getenv('WORDPRESS_DATABASE_NAME',true) . ']'; 
-
-echo DB_NAME . ' : ' . DB_USER . ' : ' . DB_PASSWORD . ' : ' . DB_HOST . ' : ' . DB_CHARSET; exit;
 
 
 /**#@+
