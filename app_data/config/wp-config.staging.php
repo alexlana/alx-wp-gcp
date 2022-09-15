@@ -41,22 +41,22 @@
 
 /** The name of the database for WordPress */
 
-define( 'DB_NAME', getenv('WORDPRESS_DATABASE_NAME') );
+define( 'DB_NAME', 'alx-wp-gcp');
 
 
 /** Database username */
 
-define( 'DB_USER', getenv('WORDPRESS_DATABASE_USER') );
+define( 'DB_USER', 'alx-wp-gcp' );
 
 
 /** Database password */
 
-define( 'DB_PASSWORD', getenv('WORDPRESS_DATABASE_PASSWORD') );
+define( 'DB_PASSWORD', 'e0Y8=Z1TAX\l@nAu' );
 
 
 /** Database hostname */
 
-define( 'DB_HOST', getenv('WORDPRESS_DATABASE_HOST') );
+define( 'DB_HOST', '34.172.252.255' );
 
 
 /** Database charset to use in creating database tables. */
