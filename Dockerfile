@@ -70,7 +70,7 @@ USER 1001
 
 
 # em um teste rápido pareceu mais rápido o wp em um volume na GCP
-VOLUME /opt/bitnami/wordpress
+# VOLUME /opt/bitnami/wordpress
 
 
 
