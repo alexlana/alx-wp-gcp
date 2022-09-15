@@ -152,7 +152,7 @@ $table_prefix = 'alxwp_';
 
 define( 'WP_DEBUG', true );
 error_reporting(E_ALL);
-ini_set('display_errors', true);
+ini_set('display_errors', true); 
 
 
 /* Add any custom values between this line and the "stop editing" line. */
