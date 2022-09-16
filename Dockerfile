@@ -31,19 +31,19 @@ COPY ./app_data/plugins /opt/bitnami/wordpress/wp-content/plugins
 COPY ./app_data/themes /opt/bitnami/wordpress/wp-content/themes
 
 # isso, ao invés de usar as env vars, reduz pela metade o build
-# COPY ./app_data/config/wp-config.staging.php /opt/bitnami/wordpress/wp-config.php
+COPY ./app_data/config/wp-config.staging.php /opt/bitnami/wordpress/wp-config.php
 
-# COPY ./app_data/config/libwordpress.sh /opt/bitnami/scripts/libwordpress.sh
-# RUN chmod 777 /opt/bitnami/scripts/libwordpress.sh
+COPY ./app_data/config/libwordpress.sh /opt/bitnami/scripts/libwordpress.sh
+RUN chmod 777 /opt/bitnami/scripts/libwordpress.sh
 
 COPY ./app_data/config/extra.conf /opt/bitnami/nginx/conf/bitnami/extra.conf
 RUN chmod 777 /opt/bitnami/nginx/conf/bitnami/extra.conf
 
-# COPY ./app_data/entrypoints/nginx-php-fpm/run.sh /opt/bitnami/scripts/nginx-php-fpm/run.sh
-# RUN chmod 777 /opt/bitnami/scripts/nginx-php-fpm/run.sh
+COPY ./app_data/entrypoints/nginx-php-fpm/run.sh /opt/bitnami/scripts/nginx-php-fpm/run.sh
+RUN chmod 777 /opt/bitnami/scripts/nginx-php-fpm/run.sh
 
-# COPY ./app_data/entrypoints/php/wait.sh /opt/bitnami/scripts/php/wait.sh
-# RUN chmod 777 /opt/bitnami/scripts/php/wait.sh
+COPY ./app_data/entrypoints/php/wait.sh /opt/bitnami/scripts/php/wait.sh
+RUN chmod 777 /opt/bitnami/scripts/php/wait.sh
 
 
 
