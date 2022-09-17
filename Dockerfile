@@ -4,21 +4,21 @@ FROM bitnami/wordpress-nginx:6.0.2
 
 USER root
 
-# # ImageMagick e GhostScript para gerar previews de PDFs
-# RUN apt-get update && \
-# 	apt-get --purge remove imagemagick && \
-# 	apt-get install ghostscript -y && \
-# 	apt-get install libgs-dev -y && \
-# 	apt-get install build-essential -y && \
-# 	apt-get install php-dev -y && \
-# 	apt-get install libmagickwand-dev libmagickcore-dev -y && \
-# 	apt-get install php-imagick -y && \
-# 	apt-get install libjpeg-dev libpng-dev libtiff-dev libgif-dev -y
+# ImageMagick e GhostScript para gerar previews de PDFs
+RUN apt-get update && \
+	apt-get --purge remove imagemagick && \
+	apt-get install ghostscript -y && \
+	apt-get install libgs-dev -y && \
+	apt-get install build-essential -y && \
+	apt-get install php-dev -y && \
+	apt-get install libmagickwand-dev libmagickcore-dev -y && \
+	apt-get install php-imagick -y && \
+	apt-get install libjpeg-dev libpng-dev libtiff-dev libgif-dev -y
 
-# ## verificar se faz diferença usar no container
-# # RUN apt-get install policycoreutils selinux-utils selinux-basics -y && \
-# # 	selinux-activate && \
-# # 	selinux-config-enforcing
+## TO DO: verificar se faz diferença usar no container
+# RUN apt-get install policycoreutils selinux-utils selinux-basics -y && \
+# 	selinux-activate && \
+# 	selinux-config-enforcing
 
 # criar arquivo para usar como na env var de persistencia do wp, o arquivo mesmo é inútil
 RUN touch /opt/bitnami/wordpress/wp-content/evitarpersistencia
