@@ -4,16 +4,16 @@ FROM bitnami/wordpress-nginx:6.0.2
 
 USER root
 
-# ImageMagick e GhostScript para gerar previews de PDFs
-RUN apt-get update && \
-	apt-get --purge remove imagemagick && \
-	apt-get install ghostscript -y && \
-	apt-get install libgs-dev -y && \
-	apt-get install build-essential -y && \
-	apt-get install php-dev -y && \
-	apt-get install libmagickwand-dev libmagickcore-dev -y && \
-	apt-get install php-imagick -y && \
-	apt-get install libjpeg-dev libpng-dev libtiff-dev libgif-dev -y
+# # ImageMagick e GhostScript para gerar previews de PDFs
+# RUN apt-get update && \
+# 	apt-get --purge remove imagemagick && \
+# 	apt-get install ghostscript -y && \
+# 	apt-get install libgs-dev -y && \
+# 	apt-get install build-essential -y && \
+# 	apt-get install php-dev -y && \
+# 	apt-get install libmagickwand-dev libmagickcore-dev -y && \
+# 	apt-get install php-imagick -y && \
+# 	apt-get install libjpeg-dev libpng-dev libtiff-dev libgif-dev -y
 
 ## TO DO: verificar se faz diferença usar no container
 # RUN apt-get install policycoreutils selinux-utils selinux-basics -y && \
@@ -69,12 +69,12 @@ RUN chmod 777 /opt/bitnami/scripts/php/wait.sh
 USER 1001
 
 
-# # em um teste rápido pareceu mais rápido o wp em um volume na GCP
-# # VOLUME /opt/bitnami/wordpress
+# em um teste rápido pareceu mais rápido o wp em um volume na GCP
+VOLUME /opt/bitnami/wordpress
 
 
 
-# EXPOSE 8080
-# EXPOSE 8443
+EXPOSE 8080
+EXPOSE 8443
 
 
