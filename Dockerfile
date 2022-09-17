@@ -64,8 +64,8 @@ RUN chmod 777 /opt/bitnami/scripts/php/wait.sh
 USER 1001
 
 
-# em um teste simples pareceu mais rápido o wp rodando em um volume na GCP
-# VOLUME /opt/bitnami/wordpress
+# Aumenta em 33% o cold start. Será que melhora performance em requisições posteriores?
+VOLUME /opt/bitnami/wordpress
 
 
 
