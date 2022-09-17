@@ -66,7 +66,7 @@ USER 1001
 
 # Localmente o ambiente parece ficar mais rápido, mas na GCP piora a performance.
 # Aumenta em 33% o cold start. Será que melhora performance em requisições posteriores?
-VOLUME /opt/bitnami/wordpress
+# VOLUME /opt/bitnami/wordpress
 
 
 
