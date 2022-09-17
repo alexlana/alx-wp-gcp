@@ -2,7 +2,7 @@ FROM bitnami/wordpress-nginx:6.0.2
 
 
 
-# USER root
+USER root
 
 # # ImageMagick e GhostScript para gerar previews de PDFs
 # RUN apt-get update && \
@@ -20,8 +20,8 @@ FROM bitnami/wordpress-nginx:6.0.2
 # # 	selinux-activate && \
 # # 	selinux-config-enforcing
 
-# # criar arquivo para usar como na env var de persistencia do wp, o arquivo mesmo é inútil
-# RUN touch /opt/bitnami/wordpress/wp-content/evitarpersistencia
+# criar arquivo para usar como na env var de persistencia do wp, o arquivo mesmo é inútil
+RUN touch /opt/bitnami/wordpress/wp-content/evitarpersistencia
 
 # # copiar arquivos para a imagem
 # # copia em staging e producao, volume em dev
