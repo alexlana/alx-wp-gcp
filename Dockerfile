@@ -1,6 +1,6 @@
 FROM bitnami/wordpress-nginx:6.0.2
 
-
+# menos variáveis na configuração do Cloud Run
 
 USER root
 
