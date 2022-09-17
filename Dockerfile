@@ -48,25 +48,25 @@ RUN chmod 777 /opt/bitnami/scripts/php/wait.sh
 
 
 
-# # certificado https
-# # ARG CERTBOT_EMAIL=alexlana@gmail.com
-# # ARG DOMAIN_LIST=fc.tmp.br
-# # 
-# # RUN apt-get update
-# # RUN apt-get install -y cron
-# # RUN apt-get install -y certbot
-# # RUN apt-get install -y python3-certbot-nginx
-# # RUN apt-get install -y bash
-# # RUN apt-get install -y wget
-# # RUN certbot certonly --standalone --agree-tos -m "${CERTBOT_EMAIL}" -n -d ${DOMAIN_LIST}
-# # RUN rm -rf /var/lib/apt/lists/*
-# # RUN echo "PATH=$PATH" > /etc/cron.d/certbot-renew 
-# # RUN echo "@monthly certbot renew --nginx >> /var/log/cron.log 2>&1" >>/etc/cron.d/certbot-renew
-# # RUN crontab /etc/cron.d/certbot-renew
-# # VOLUME /etc/letsencrypt
+# certificado https
+# ARG CERTBOT_EMAIL=alexlana@gmail.com
+# ARG DOMAIN_LIST=fc.tmp.br
+# 
+# RUN apt-get update
+# RUN apt-get install -y cron
+# RUN apt-get install -y certbot
+# RUN apt-get install -y python3-certbot-nginx
+# RUN apt-get install -y bash
+# RUN apt-get install -y wget
+# RUN certbot certonly --standalone --agree-tos -m "${CERTBOT_EMAIL}" -n -d ${DOMAIN_LIST}
+# RUN rm -rf /var/lib/apt/lists/*
+# RUN echo "PATH=$PATH" > /etc/cron.d/certbot-renew 
+# RUN echo "@monthly certbot renew --nginx >> /var/log/cron.log 2>&1" >>/etc/cron.d/certbot-renew
+# RUN crontab /etc/cron.d/certbot-renew
+# VOLUME /etc/letsencrypt
 
 
-# USER 1001
+USER 1001
 
 
 # # em um teste rápido pareceu mais rápido o wp em um volume na GCP
