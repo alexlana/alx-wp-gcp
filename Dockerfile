@@ -39,11 +39,11 @@ RUN touch /opt/bitnami/wordpress/wp-content/evitarpersistencia
 COPY ./app_data/config/extra.conf /opt/bitnami/nginx/conf/bitnami/extra.conf
 RUN chmod 777 /opt/bitnami/nginx/conf/bitnami/extra.conf
 
-# COPY ./app_data/entrypoints/nginx-php-fpm/run.sh /opt/bitnami/scripts/nginx-php-fpm/run.sh
-# RUN chmod 777 /opt/bitnami/scripts/nginx-php-fpm/run.sh
+COPY ./app_data/entrypoints/nginx-php-fpm/run.sh /opt/bitnami/scripts/nginx-php-fpm/run.sh
+RUN chmod 777 /opt/bitnami/scripts/nginx-php-fpm/run.sh
 
-# COPY ./app_data/entrypoints/php/wait.sh /opt/bitnami/scripts/php/wait.sh
-# RUN chmod 777 /opt/bitnami/scripts/php/wait.sh
+COPY ./app_data/entrypoints/php/wait.sh /opt/bitnami/scripts/php/wait.sh
+RUN chmod 777 /opt/bitnami/scripts/php/wait.sh
 
 
 
