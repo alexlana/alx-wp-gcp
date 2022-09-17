@@ -4,7 +4,7 @@ FROM bitnami/wordpress-nginx:6.0.2
 
 USER root
 
-# # ImageMagick e GhostScript para gerar previews de PDFs
+# ImageMagick e GhostScript para gerar previews de PDFs. Isso pode aumentar o tempo do cold start em cerca de 25%
 # RUN apt-get update && \
 # 	apt-get --purge remove imagemagick && \
 # 	apt-get install ghostscript -y && \
@@ -14,11 +14,6 @@ USER root
 # 	apt-get install libmagickwand-dev libmagickcore-dev -y && \
 # 	apt-get install php-imagick -y && \
 # 	apt-get install libjpeg-dev libpng-dev libtiff-dev libgif-dev -y
-
-## TO DO: verificar se faz diferença usar no container
-# RUN apt-get install policycoreutils selinux-utils selinux-basics -y && \
-# 	selinux-activate && \
-# 	selinux-config-enforcing
 
 # criar arquivo para usar como na env var de persistencia do wp, o arquivo mesmo é inútil
 RUN touch /opt/bitnami/wordpress/wp-content/evitarpersistencia
@@ -69,8 +64,8 @@ RUN chmod 777 /opt/bitnami/scripts/php/wait.sh
 USER 1001
 
 
-# em um teste rápido pareceu mais rápido o wp em um volume na GCP
-VOLUME /opt/bitnami/wordpress
+# em um teste simples pareceu mais rápido o wp rodando em um volume na GCP
+# VOLUME /opt/bitnami/wordpress
 
 
 
