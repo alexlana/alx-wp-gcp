@@ -4,15 +4,15 @@ FROM bitnami/wordpress-nginx:6.0.2
 USER root
 
 # ImageMagick e GhostScript para gerar previews de PDFs. Isso pode aumentar o tempo do cold start em cerca de 25%
-RUN apt-get update && \
-	apt-get --purge remove imagemagick && \
-	apt-get install ghostscript -y && \
-	apt-get install libgs-dev -y && \
-	apt-get install build-essential -y && \
-	apt-get install php-dev -y && \
-	apt-get install libmagickwand-dev libmagickcore-dev -y && \
-	apt-get install php-imagick -y && \
-	apt-get install libjpeg-dev libpng-dev libtiff-dev libgif-dev -y
+# RUN apt-get update && \
+# 	apt-get --purge remove imagemagick && \
+# 	apt-get install ghostscript -y && \
+# 	apt-get install libgs-dev -y && \
+# 	apt-get install build-essential -y && \
+# 	apt-get install php-dev -y && \
+# 	apt-get install libmagickwand-dev libmagickcore-dev -y && \
+# 	apt-get install php-imagick -y && \
+# 	apt-get install libjpeg-dev libpng-dev libtiff-dev libgif-dev -y
 
 # criar arquivo para usar como na env var de persistencia do wp, o arquivo mesmo é inútil
 RUN touch /opt/bitnami/wordpress/wp-content/evitarpersistencia
